@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WAD EXAM
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>HEADING</h1> <!-- this is used for headings, there are 6 types h1..6 in the decreasing 
+            order of size and importance-->
+        
+        <hr><!--horizontal rule across page-->
+
+        <p>content of the body is written here</p> <!-- used to define a paragraph -->
+
+        <a href="https://www.notion.so/Web-application-Development-b8a82bcacf2d4af2b0b8eac33f2eae20">
+            Anchor tag
+        </a> <!-- used to link different page through url, can be redirected to url -->
+
+        <textarea name="textarea" id="txtara" cols="30" rows="10">
+            this is a content inside the text area, this is editable.
+        </textarea>
+        <p>
+            this is a poem this is a poem <br> this is a poem this is a poem 
+            <br> this is a poem this is a poem <br> this is a poem
+        </p> <!-- br tag or line break is used to break the line and move to next line -->
+
+        <hr>
+
+        <pre>
+            this is a pre poem 
+            i am a super star
+            bdb adjksk adjf' 
+            dsf <abbr title="Cascading style sheet">CSS</abbr>
+            dbksb dsk sdnv
+            vjk
+        </pre> <!-- pre formatted text will not alter the width sizing of the text given -->
+
+        <hr>
+
+        <table>
+            <caption>CIE II Marks</caption>
+            <thead>
+                <tr>
+                    <th>SUBJECT</th><!--th is table heading inside the table-->
+                    <th>MARKS</th>
+                </tr><!--tr is table row-->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WAD</td><!--td stands for table data used to put data in table cells-->
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>DAA</td><!--should use css to make the table border visible-->
+                    <td>9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>19</td>
+                </tr>
+            </tfoot> <!--table footer-->
+        </table> <!--represents tabular data, contains two dimenstional data in rows and column cells-->
+
+        <hr>
+
+        <address>
+            <a href="mailto:sidharth.sherla@gmail.com">
+                Sidharth Sherla
+            </a><!--mailto: redirects you directly to gmail drafts-->
+            <br>
+            <a href="tel:+919182969619">call sidharth</a><!--tel: is to define telephone number-->
+        </address> <!--is used to provide contact information of a person or an organisation-->
+
+        <hr>
+        <p>
+        Cut: <kbd>Cmd + X</kbd> <br>
+        Copy: <kbd>Cmd + C</kbd> <br>
+        Paste: <kbd>Cmd + V</kbd> <br>
+        <!--kbd stands for keyboard input element, it is used to represent keyboard shortcuts in html,
+            but it needs css to look pretty.-->
+        </p>
+
+        <hr>
+
+        <menu>
+            <li><button id="home">home</button></li>
+            <li><button id="exit">exit</button></li>
+        </menu> <!--used to define menu, it similar to ul tag but menu is interactive-->
+
+        <nav>
+            <ol>
+                <li>items</li>
+                <li>subjects</li>
+                <li>wad</li> <!--li is for list items-->
+            </ol> <!--ol is for ordered list and ul is for unordered list-->
+            <ul>
+                <li>items</li>
+                <li>subjects</li>
+                <li>wad</li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <p><span>some text</span></p>
+
+        <audio controls src="/sunflower-street-drumloop-85bpm-163900.mp3">
+            
+        </audio><!--used to embbed audio into webpage-->
+
+        <video controls width="250">
+            <source src="/172451 (360p).mp4">
+        </video><!--used to embbed videos into webpages-->
+
+        <p> >  select tag </p>
+        <select name="menuoptions" id="menu123">
+            <option value="">please choose an option</option>
+            <option value="dog"> Dog </option>
+            <option value="cat"> Cat </option>
+            <option value="monkey"> monkey </option>
+            <!--option tag are to provide options in a select tag-->
+        </select> <!--is a menu of selectable items-->
+        <dl>
+            <dt><b>description title</b></dt><!--b is for bold text-->
+            <dd>description data</dd>
+        </dl><!--dl is for description list-->
+        <p>input type radio</p>
+        <div>
+            <input type="radio" id="abc"><!--used to get radio buttons which is round selectors-->
+            <label for="abc">Radio button</label><!--used represent caption of an element-->
+            <input type="radio" id="bb">
+            <label for="bb">Next button</label>
+        </div>
+        
+        <hr>
+        <p> >  input type button</p>
+        <input type="button" value="Button">
+        <P> >  input type text</P>
+        <div>
+            <input type="text" name="" id=""><!--takes text as input using a text field-->
+        </div>
+
+        <p> >  input type checkbox </p>
+        <div>
+            <input
+              type="checkbox"
+              id="subscribeNews"
+              name="subscribe"
+              value="newsletter" />
+            <label for="subscribeNews">Subscribe to newsletter?</label>
+        </div>
+
+        <p> >  input type username, password and submit</p>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+          </div>
+          
+          <div>
+            <label for="pass">Password (8 characters minimum):</label><br>
+            <input type="password" id="pass" name="password" minlength="8" required />
+          </div>
+          
+          <input type="submit" value="Sign in" />
+
+          <p> >  input type number</p>
+          <div>
+            <input type="number" name="hh" id="gh">
+            <label for="gh">number tag</label>
+          </div>
+
+          <p> >  input type file</p>
+          <div>
+            <input type="file" name="files" id="file">
+            <label for="file">select a file</label>
+          </div>
+
+          <hr>
+
+          <p> >  HTML FORM</p>
+          <form action="" method="get" class="form-exmple"><!--form tags is a document of interactive components to obtain and submit information-->
+            <div class="form-user">
+                <label for="username">Username</label>
+                <input type="text" id="username" required/> <br> <!--required is used to make it necessary to fill -->
+                <label for="pass">Password</label>
+                <input type="password" id="pass" required/> <br>
+                <input type="submit" value="Signin">
+            </div>
+          </form>
+
+          <hr>
+        
+          <fieldset>
+            <p>h gv vj </p>
+         
+         <legend attributes>Heading</legend>
+
+         <blockquote >
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        </fieldset>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        <bdo dir="rtl">This text will be written from right to left
+        </bdo>
+        
+        
+        <textarea rows="2" cols="20"> this is a text area</textarea> 
+            
+        <hr>
+        <hr>
+    </body>
+</html>

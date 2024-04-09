@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Table for CSE-DS</title>
+        <style>
+            table.tt td,th{
+                border: 2px solid black;
+                height: 60px;
+                width: 80px;
+            }
+            table{
+                border-collapse: collapse;
+                text-align: center;
+            }
+            #lunch{
+                writing-mode: vertical-lr;
+                text-orientation: mixed;
+                rotate: 180deg;
+                width: 30px;
+            }
+            #header{
+                background-color: gray;
+            }
+            table.course td,th{
+                border: 2px solid black;
+                height: 35px;
+                width: fit-content;
+            }
+
+        </style>
+    </head>
+    <body>
+    <center>
+        <h1>Time table</h1>
+        <h2>ACADEMIC YEAR: 2022-2023</h2>
+        <table class = "tt">
+            <tr id="header">
+                <th>DAYS</th>
+                <th>9:40PM <br> to <br> 10:30PM</th>
+                <th>10:30PM <br> to <br> 11:20PM</th>
+                <th>11:20PM <br> to <br> 12:10PM</th>
+                <th>12:10PM <br> to <br> 1:00PM</th>
+                <th rowspan="7" id="lunch"> LUNCH </th>
+                <th>1:40PM <br> to <br> 2:30PM</th>
+                <th>2:30PM <br> to <br> 3:20PM</th>
+                <th>3:20PM <br> to <br> 4:10PM</th>
+            </tr>
+            <tr>
+                <th>MONDAY</th>
+                <td>DAA <br> DSV <br> 3220 </td>
+                <td>DMR <br> PKG <br> 3220 </td>
+                <td>DMS <br> YMK <br> 3220 </td>
+                <td>ExEEd <br> SKP <br> 3220 </td> 
+                <td>ICS <br> RRR <br> 3220 </td> 
+                <td>WAD <br> SSk <br> 3220 </td> 
+                <td>SPORTS/LIBRARY <br> YMK <br> 3220 </td>  
+            </tr>
+            <tr>
+                <th>TUESDAY</th>
+                <td>DMS <br> YMK <br> 3220 </td>
+                <td>DMS <br> YMK <br> 3220 </td>
+                <td>ExEEd <br> SKP <br> 3220 </td>
+                <td>WAD <br> SSk <br> 3220 </td>                
+                <td>ICS <br> RRR <br> 3220 </td>
+                <td>ECA/CCA <br> YMK <br> 3220 </td>
+                <td>LIBRARY/SPORTS <br> YMK <br> 3220 </td>  
+            </tr>
+            <tr>
+                <th>WEDNESDAY</th>
+                <td>WAD <br> SSk <br> 3220 </td>
+                <td>DMR <br> PKG <br> 3220 </td>
+                <td>DAA <br> DSV <br> 3220 </td>
+                <td>BEF <br> DSD <br> 3220 </td>                
+                <td colspan="3">DSM/WAD/LXP LABORATORY <br> YMK/SSK/JSH <br> 3304/3305/3306 </td>
+            </tr>
+            <tr>
+                <th>THURSDAY</th>
+                <td>DAA <br> DSV <br> 3220 </td>
+                <td>DMS <br> YMK <br> 3220 </td>
+                <td>WAD <br> SSk <br> 3220 </td>
+                <td>BEF <br> DSD <br> 3220 </td>                
+                <td>DMR <br> PKG <br> 3220 </td>
+                <td>DMR <br> PKG <br> 3220 </td>
+                <td>LIBRARY/SPORTS <br> YMK <br> 3220 </td>
+            </tr>
+            <tr>
+                <th>FRIDAY</th>
+                <td>DMR <br> PKG <br> 3220 </td>
+                <td>WAD <br> SSk <br> 3220 </td>
+                <td>BEF <br> DSD <br> 3220 </td>
+                <td>DAA <br> DSV <br> 3220 </td>                
+                <td colspan="3">DSM/WAD/LXP LABORATORY <br> YMK/SSK/JSH <br> 3304/3305/3306 </td>
+            </tr>
+            <tr>
+                <th>SATURDAY</th>
+                <td>DMS <br> YMK <br> 3220 </td>
+                <td>BEF <br> DSD <br> 3220 </td>
+                <td>WAD <br> SSk <br> 3220 </td>
+                <td>DAA <br> DSV <br> 3220 </td>               
+                <td colspan="3">DSM/WAD/LXP LABORATORY <br> YMK/SSK/JSH <br> 3304/3305/3306 </td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2>Course name/ faculty name/ room number:</h2><br>
+        <table class = "course">
+            <tr id="header">
+                <th colspan="3">course details</th>
+                <th colspan="3">faculty details</th>
+            </tr>
+            <tr id="header">
+                <th>course code</th>
+                <th>course abbrevation</th>
+                <th>course name</th>
+                <th>emp id</th>
+                <th colspan="2">name of the faculty</th>
+            </tr>
+            <tr>
+                <td>ACDC03</td>
+                <td>DMR</td>
+                <td>Data Management and Representation</td>
+                <td>IARE10902</td>
+                <td>PKG</td>
+                <td>Ms. Priyanka Gupta</td>
+            </tr>
+            <tr>
+                <td>AITC05</td>
+                <td>DMS</td>
+                <td>Database Management Systems</td>
+                <td>IARE10990</td>
+                <td>YMK</td>
+                <td>Mr. Y. Mallikarjun</td>
+            </tr>
+            <tr>
+                <td>ACSC13</td>
+                <td>DAA</td>
+                <td>Design and Analysis of Algorithms</td>
+                <td>IARE10839</td>
+                <td>DSV</td>
+                <td>Mr. D Sreenivasulu</td>
+            </tr>
+            <tr>
+                <td>AITC09</td>
+                <td>WAD</td>
+                <td>Web application Development</td>
+                <td>IARE10871</td>
+                <td>SSK</td>
+                <td>Dr. S Sreekanth</td>
+            </tr>
+            <tr>
+                <td>AHSC13</td>
+                <td>BEF</td>
+                <td>business Economics and Financial Analysis</td>
+                <td>IARE10982</td>
+                <td>DSD</td>
+                <td>Ms. Dara Sandhya</td>
+            </tr>
+            <tr>
+                <td>ACSC14</td>
+                <td>EXD</td>
+                <td>ExEEd - Fabrication/Model Development</td>
+                <td>IARE10791</td>
+                <td>SKP</td>
+                <td>Dr. Shika Kumari Pandey</td>
+            </tr>
+            <tr>
+                <td>AITC07</td>
+                <td>DMSL</td>
+                <td>Database Management Systems Laboratory</td>
+                <td>IARE10990</td>
+                <td>YMK</td>
+                <td>Mr. Y. Mallikarjun</td>
+            </tr>
+            <tr>
+                <td>AITC10</td>
+                <td>WADL</td>
+                <td>Web application Development Laboratory</td>
+                <td>IARE10871</td>
+                <td>SSK</td>
+                <td>Dr. S Sreekanth</td>
+            </tr>
+            <tr>
+                <td>ACSC16</td>
+                <td>LPL</td>
+                <td>Linux programming Laboratory</td>
+                <td>IARE11038</td>
+                <td>JSH</td>
+                <td>Mrs. J Shirisha</td>
+            </tr>
+            <tr>
+                <td>AHSC14</td>
+                <td>ICS</td>
+                <td>Indian Constituion</td>
+                <td>IARE11025</td>
+                <td>RRR</td>
+                <td>Dr. Raghuram Reddy</td>
+            </tr>
+            <tr>
+                <td>AHSC15</td>
+                <td>SSI</td>
+                <td>Soft Skills and Interpersonal Communication</td>
+                <td>IARE11025</td>
+                <td>KBR</td>
+                <td>Dr. K Bhaskar</td>
+            </tr>
+            <tr>
+                <td>LIBRARY</td>
+                <td>LIBRARY</td>
+                <td>Library</td>
+                <td>IARE11034</td>
+                <td>SSK</td>
+                <td>Dr. S Sreekanth</td>
+            </tr>
+            <tr>
+                <td>SPORTS</td>
+                <td>SPORTS</td>
+                <td>Sports</td>
+                <td>IARE10990</td>
+                <td>YMK</td>
+                <td>Mr. Y. Mallikarjun</td>
+            </tr>
+            <tr>
+                <td>ECA_CCA</td>
+                <td>ECA_CCA</td>
+                <td>Extra curricular/Co - curricular Activities</td>
+                <td>IARE10990</td>
+                <td>YMK</td>
+                <td>Mr. Y. Mallikarjun</td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>

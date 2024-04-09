@@ -1,0 +1,24 @@
+<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="23" height="25" fill="#AEAEAE"/>
+<g id="Log in" filter="url(#filter0_b_0_1)">
+<rect x="-48" y="-245" width="390" height="844" fill="black"/>
+<g id="sign form">
+<g id="password">
+<rect id="pass" x="-19.5" y="-15.5" width="329" height="56" rx="4.5" fill="black" stroke="white"/>
+<g id="lock">
+<path id="Vector" d="M17.575 11.2082H4.62499C3.60327 11.2082 2.77499 12.1205 2.77499 13.246V20.3785C2.77499 21.5039 3.60327 22.4163 4.62499 22.4163H17.575C18.5967 22.4163 19.425 21.5039 19.425 20.3785V13.246C19.425 12.1205 18.5967 11.2082 17.575 11.2082Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6.47501 11.2081V7.13246C6.47501 5.78128 6.96228 4.48545 7.82964 3.53002C8.69699 2.57459 9.87338 2.03784 11.1 2.03784C12.3266 2.03784 13.503 2.57459 14.3704 3.53002C15.2377 4.48545 15.725 5.78128 15.725 7.13246V11.2081" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<rect x="-47.5" y="-244.5" width="389" height="843" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_b_0_1" x="-52" y="-249" width="398" height="852" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>

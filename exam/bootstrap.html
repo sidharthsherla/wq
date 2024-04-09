@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--breadcrumbs with arrows-->
+    <p>breadcrumb with arrows</p>
+    <nav class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="#item1">flexbox</a></li>
+        <li class="breadcrumb-item"><a href="#carslid">carousel</a></li>
+        <li class="breadcrumb-item"><a href="#buttons">button</a></li>
+        <li class="breadcrumb-item"><a href="#card">card</a></li>
+    </nav>
+
+    <hr>
+    <!--headings-->
+
+    <p class="h1"> h1 heading in bootstrap </p>
+    <p class="h2"> h2 heading in bootstrap </p>
+    <p class="h3"> h3 heading in bootstrap </p>
+    <p class="h4"> h4 heading in bootstrap </p>
+    <p class="h5"> h5 heading in bootstrap </p>
+    <p class="h6"> h6 heading in bootstrap </p>
+    
+    <hr>
+    <!--display[1..4]-->
+    <p class="display-4">this is a display heading, display headings range from 1..4 and below are the 
+        different colours in bootstrap they can be used for any element.
+    </p>
+    <!--buttons-->
+    <button class="btn btn-primary" id="buttons" > Primary button </button>
+    <button class="btn btn-danger" > Danger button </button>
+    <button class="btn btn-secondary" > Secondary button </button>
+    <button class="btn btn-success" > Success button </button>
+    <button class="btn btn-warning" > Warning button </button>
+    <button class="btn btn-info" > Info button </button>
+    <button class="btn btn-light" > Light button </button>
+    <button class="btn btn-dark" > Dark button </button>
+    <!--alert-->
+    <div class="alert alert-primary" role="alert"><strong>to get full information </strong><a href="https://getbootstrap.com/docs/5.3/components/" class="alert-link">Click Here</a></div>
+    <div class="alert alert-secondary" role="alert">the above shown is alert with a link, and this is without link</div>
+    <div class="alert alert-success" role="alert">Just like button alert also has various colours</div>
+    
+    <!--badge-->
+    <span class="badge bg-primary">This is a Badge</span>
+    <div class="h1">A badge can take up the size of its predecessor<div class="badge bg-success">SEE</div></div>
+    <div class="h5">A badge can take up the size of its predecessor<div class="badge bg-success">SEE</div></div>
+    <!--dropdown menu-->
+    <div>This is a dropdown menu of list of breakpoints in bootstrap, breakpoints effect the size of your element
+        depending on the screensize of device.
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Breakpoints
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">xs: 0px</li>
+                <li class="dropdown-item">sm: 576px</li>
+                <li class="dropdown-item">md: 768px</li>
+                <li class="dropdown-item">lg: 992px</li>
+                <li class="dropdown-item">xl: 1200px</li>
+                <li class="dropdown-item">xxl: 1400px</li>
+            </ul>
+        </div>
+        <!--breakpoints using container-->
+        <div class="container-md">
+            <div class="row bg-primary">
+                here is an example of breakpoints using container, container are building blocks that contain, pad, and align your content within a given device or viewport.
+            </div>            
+        </div>
+
+    </div>
+    <!--grid structure-->
+    <div class="container-fluid">  
+        <h2>Three equal-width columns</h2>  
+        <div class="row">  
+          <div class="col" style="background-color:lavender;">.col</div>  
+          <div class="col" style="background-color:orange;">.col</div>  
+          <div class="col" style="background-color:lavender;">.col</div>  
+          
+        </div>
+    </div>
+    <!--grid structure-->
+    <div class="container-fluid">
+    <div class="row">    
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-success text-white" >col</div> 
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-dark text-white" >col</div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-danger text-white" >col</div> 
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-success text-white" >col</div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-primary text-white" >col</div> 
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-secondary text-white" >col</div>  
+    </div>
+    </div>
+
+   <hr>
+
+   <p class="display-3">TABLE</p>
+    
+   <!--Table-->
+   <div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+   <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+     
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <hr>
+  <!--bootstrap grid-->
+    <span id="item1">
+        Use flexbox alignment utilities to vertically and horizontally align columns.
+        <div class="container text-center h-50">
+            <div class="row align-items-end">
+              <div class="col">
+                One of three columns
+              </div>
+              <div class="col">
+                One of three columns
+              </div>
+              <div class="col">
+                One of three columns
+              </div>
+            </div>
+        </div>
+    </span>
+
+    <hr>
+
+    <!--container-fluid-->
+    <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>class="container-fluid"
+            This part is inside a .container class.</p> 
+        <p>The .container class provides a responsive fixed width container.</p>
+        <p>Resize the browser window to see that its width (max-width) will change at different
+             breakpoints.</p>
+
+    </div>
+    <!--container-->
+    <div class="container p-3 my-3 bg-dark text-white">
+        <h1>My Second Bootstrap Page</h1>
+            <p>
+                class="container p-3 my-3 bg-dark text-white"
+                This container has a dark background color and a white text,
+                 and some extra padding and margins.
+                 
+            </p>
+    </div>
+    
+
+
+    <hr>
+    <!--Carousels-->
+    <p class="h2">--Carousels--</p>
+    <div class="carousel slide" id="carslid">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/tree-736885_1280.jpg" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+                <img src="/tree-736885_1280.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="/tree-736885_1280.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carslid" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carslid" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">NEXT</span>
+        </button>
+    </div>
+
+    <!--breadcrumbs-->
+    
+    <nav class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                Home
+            </li>
+            <li class="breadcrumb-item">
+                library
+            </li>
+            <li class="breadcrumb-item">
+                magazine
+            </li>
+        </ol>
+    </nav>
+
+    <!--basic card-->
+
+    <div class="card" style="width: 18rem;" id="card">
+        <img src="#" alt="This is an image here there was an image">
+        <div class="card body">
+            <h6 class="card-title">Card Title</h6>
+            <p class="card-text">some text with card title for any card body with allowing us to write this</p>
+            <a href="#" class="btn btn-primary">submit</a>
+        </div>
+    </div>
+
+    <!--collapsable information using cards-->
+    <a href="#collapse-example" class="btn btn-warning" data-bs-toggle="collapse" role="button">Collapse button</a>
+    <div class="collapse" id="collapse-example">
+        <p class="card card-body">
+            d-inline-flex   is used to arrange elements in a single line
+            gap-1..n     is used to define the gap between elements arranged
+        </p>
+    </div>
+    <!--card groups-->
+    <div class="card-columns">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first cardSome text inside the first cardSome text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the second cardSome text inside the second card</p>
+            </div>
+          </div>
+          <div class="card bg-success">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the third card</p>
+            </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the fourth card</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fifth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the sixth card</p>
+          </div>
+        </div>
+    </div>
+  
+  
+    <!--navigation-->
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
+
+    <!--spinners/loaders-->
+    <div class="spinner-border">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-primary">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-secondary">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-warning">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-danger">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-light">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-dark">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-border text-alert">
+        <span class="visually-hidden">loading</span>
+    </div>
+    <div class="spinner-grow">
+        <span class="visually-hidden">loading</span>
+    </div>
+
+    <hr>
+    <!--pagination-->
+    <p class="display-6">pagination</p>
+    <nav class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </nav>
+
+    <!--simple form-->
+
+    <div class="md-3 d-inline-flex gap-3" >
+        <label for="emailform">mail</label>
+        <input type="email" class="form-control" id="emailform" placeholder="name@email.com">
+        <label for="passwordform">password</label>
+        <input type="password" class="form-control" id="passwordform" placeholder="password">
+        <input type="submit" class="btn btn-dark">
+    </div>
+    
+    <!--jumbotron-->
+
+    <div class="jumbotron">
+        <p class="display-4">Jumbotron</p>
+        <p class="lead">Jumbotron is used to get a box around text to highlight it from the
+             rest ot thte content available in the web page</p>
+        <hr class="my-4">
+        <p>it uses utility classes for typograph and spacing to space content out within the larger 
+            container.</p>
+        <div class="lead">
+            <button class="btn btn-danger">
+                understood
+            </button>
+        </div>
+    </div>
+
+    <!--list groups-->
+
+    <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      
+    </ul>
+
+    <!--Context about .gx-* class-->
+
+    <p>
+        .gx-* classes can be used to control the horizontal gutter widths.
+        The .container or .container-fluid parent may need to be adjusted 
+        if larger gutters are used too to avoid unwanted overflow, using a 
+        matching padding utility. For example, in the following example we've 
+        increased the padding with .px-4
+    </p>
+
+    <!--container-->
+
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">Custom column padding</div>
+          </div>
+          <div class="col">
+            <div class="p-3">Custom column padding</div>
+          </div>
+        </div>
+    </div>
+
+    <!--modal-->
+
+    <button type="button" class="btn btn-primary" data-bs-target="#examplemodal" data-bs-toggle="modal">
+        modal example</button>
+    <div class="modal" aria-labelledby="exampleModalLabel" id="examplemodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">
+                        This is a modal
+                    </div>
+                    <button class="btn btn-light" data-bs-dismiss="modal" aria-label="close">X</button>
+                </div>
+                <div class="modal-body">
+                    this is the body of a modal
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-light" data-bs-dismiss="modal">close</button>
+                    <button class="btn btn-warning">warning</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--textarea-->
+
+    <h3>textarea example
+        <div class="container w-50 mt-5">
+            <textarea row="5" cols="20" class="form-control"></textarea>
+        </div>
+    </h3>
+    
+    <!--flexbox container in row-->
+
+    <div class="container mt-3">
+        <h2>Flex</h2>
+        <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+        <div class="d-flex p-3 bg-secondary text-white">  
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+    
+    <!--flexbox container in column-->
+    <div class="container mt-3">
+        <h2>Flex</h2>
+        <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+        <div class="d-flex flex-column p-3 bg-secondary text-white">  
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <!--panels-->
+    <div class="panel panel-default">
+        <div class="panel-body">A Basic Panel</div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .video-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 100%;
+  }
+  
